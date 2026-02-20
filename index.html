@@ -76,12 +76,21 @@
             box-shadow: 0 4px 20px rgba(0,0,0,0.5);
         }
 
-        .header-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 30px;
-        }
+        <div class="header-actions">
+    <a href="#account" class="action-btn" onclick="alert('Account page coming soon!'); return false;">
+        <span>👤</span>
+        <span>Account</span>
+    </a>
+    <a href="#wishlist" class="action-btn" onclick="alert('Wishlist: 0 items'); return false;">
+        <span>❤️</span>
+        <span>Wishlist</span>
+    </a>
+    <a href="#cart" class="action-btn" onclick="showCart(); return false;">
+        <span>🛒</span>
+        <span>Cart</span>
+        <span class="cart-count" id="cart-count">0</span>
+    </a>
+</div>
 
         .logo {
             font-size: 2rem;
